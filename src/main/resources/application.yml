@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: embedding-exercise
+  main:
+    web-application-type: none
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY:}
+      embedding:
+        options:
+          model: text-embedding-3-small
+
+logging:
+  level:
+    org.springframework.ai: INFO
