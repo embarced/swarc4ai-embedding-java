@@ -14,37 +14,33 @@ import java.util.Set;
 public class ManualEmbeddingService {
 
     public List<String> buildVocabulary(List<String> texts) {
-        Set<String> vocabulary = new LinkedHashSet<>();
-        for (String text : texts) {
-            vocabulary.addAll(tokenize(text));
-        }
-        return new ArrayList<>(vocabulary);
+        // TODO: UEBUNG 1 - Erzeuge aus allen Texten ein gemeinsames Vokabular.
+        // TODO: UEBUNG 1 - Zerlege dafuer jeden Text in Tokens und sammle jedes Wort genau einmal.
+        // TODO: UEBUNG 1 - Gib das Vokabular als List<String> zurueck.
+        throw new UnsupportedOperationException("UEBUNG 1: Implementiere den Aufbau des Vokabulars.");
     }
 
     public int[] oneHotEncode(String token, List<String> vocabulary) {
-        int[] vector = new int[vocabulary.size()];
-        int tokenIndex = vocabulary.indexOf(token.toLowerCase(Locale.ROOT));
-        if (tokenIndex >= 0) {
-            vector[tokenIndex] = 1;
-        }
-        return vector;
+        // TODO: UEBUNG 1 - Erzeuge einen Vektor mit der Laenge des Vokabulars.
+        // TODO: UEBUNG 1 - Setze genau die Position des uebergebenen Tokens auf 1.
+        // TODO: UEBUNG 1 - Alle anderen Positionen bleiben 0.
+        throw new UnsupportedOperationException("UEBUNG 1: Implementiere One-Hot-Encoding.");
     }
 
     public double[] toBagOfWordsVector(String text, List<String> vocabulary) {
-        double[] vector = new double[vocabulary.size()];
-        for (String token : tokenize(text)) {
-            int tokenIndex = vocabulary.indexOf(token);
-            if (tokenIndex >= 0) {
-                vector[tokenIndex] += 1.0;
-            }
-        }
-        return vector;
+        // TODO: UEBUNG 1 - Erzeuge fuer den gesamten Text einen Bag-of-Words-Vektor.
+        // TODO: UEBUNG 1 - Erhoehe fuer jedes vorkommende Token den passenden Zaehler im Vektor.
+        throw new UnsupportedOperationException("UEBUNG 1: Implementiere den Bag-of-Words-Vektor.");
     }
 
     public double calculateSimilarity(String leftText, String rightText, List<String> vocabulary) {
-        double[] leftVector = toBagOfWordsVector(leftText, vocabulary);
-        double[] rightVector = toBagOfWordsVector(rightText, vocabulary);
-        return CosineSimilarity.calculate(leftVector, rightVector);
+        // TODO: UEBUNG 1 - Erzeuge fuer beide Texte jeweils einen Bag-of-Words-Vektor.
+        // TODO: UEBUNG 1 - Berechne anschliessend die Cosine Similarity mit der Hilfsklasse CosineSimilarity.
+        // TODO: UEBUNG 1 - Gib den berechneten Wert zurueck.
+        // SO PRUEFST DU ES: Starte die App. Es sollten fuer mehrere Satzpaare Bag-of-Words-Scores ausgegeben werden.
+        // Achtet darauf, dass 'Auto' vs. 'Fahrzeug' nur begrenzt erkannt wird und dass bei
+        // 'Hund beisst Mann' vs. 'Mann beisst Hund' die Wortreihenfolge verloren geht.
+        throw new UnsupportedOperationException("UEBUNG 1: Implementiere die Bag-of-Words-Similarity.");
     }
 
     public List<String> tokenize(String text) {

@@ -2,7 +2,6 @@ package de.landtag.embedding;
 
 import de.landtag.embedding.model.TextPair;
 import de.landtag.embedding.service.ManualEmbeddingService;
-import de.landtag.embedding.service.OpenAiEmbeddingService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,11 +12,9 @@ import java.util.List;
 public class EmbeddingApplication implements CommandLineRunner {
 
     private final ManualEmbeddingService manualEmbeddingService;
-    private final OpenAiEmbeddingService openAiEmbeddingService;
 
-    public EmbeddingApplication(ManualEmbeddingService manualEmbeddingService, OpenAiEmbeddingService openAiEmbeddingService) {
+    public EmbeddingApplication(ManualEmbeddingService manualEmbeddingService) {
         this.manualEmbeddingService = manualEmbeddingService;
-        this.openAiEmbeddingService = openAiEmbeddingService;
     }
 
     public static void main(String[] args) {
@@ -40,11 +37,6 @@ public class EmbeddingApplication implements CommandLineRunner {
         System.out.println("\n=== Teil 1: Bag of Words ===");
         for (TextPair pair : textPairs) {
             manualEmbeddingService.printComparison(pair, vocabulary);
-        }
-
-        System.out.println("\n=== Teil 2: OpenAI Embeddings ===");
-        for (TextPair pair : textPairs) {
-            openAiEmbeddingService.printComparison(pair);
         }
     }
 
