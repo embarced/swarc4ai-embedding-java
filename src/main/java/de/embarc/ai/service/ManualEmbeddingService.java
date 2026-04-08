@@ -1,6 +1,6 @@
-package de.landtag.embedding.service;
+package de.embarc.ai.service;
 
-import de.landtag.embedding.model.TextPair;
+import de.embarc.ai.model.TextPair;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

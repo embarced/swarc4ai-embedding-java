@@ -1,8 +1,8 @@
-package de.landtag.embedding;
+package de.embarc.ai;
 
-import de.landtag.embedding.model.TextPair;
-import de.landtag.embedding.service.ManualEmbeddingService;
-import de.landtag.embedding.service.OpenAiEmbeddingService;
+import de.embarc.ai.model.TextPair;
+import de.embarc.ai.service.ManualEmbeddingService;
+import de.embarc.ai.service.OpenAiEmbeddingService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
