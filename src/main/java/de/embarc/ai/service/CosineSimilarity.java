@@ -1,4 +1,4 @@
-package de.landtag.embedding.service;
+package de.embarc.ai.service;
 
 public final class CosineSimilarity {
 
