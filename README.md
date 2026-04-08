@@ -108,11 +108,11 @@ git checkout <branch-name>
 ```
 
 ## Wichtige Dateien
-- `src/main/java/de/landtag/embedding/EmbeddingApplication.java`
+- `src/main/java/de/embarc/ai/EmbeddingApplication.java`
   - Startpunkt und Konsolenausgabe
-- `src/main/java/de/landtag/embedding/service/ManualEmbeddingService.java`
+- `src/main/java/de/embarc/ai/service/ManualEmbeddingService.java`
   - One-Hot-Encoding, Bag of Words und Cosine Similarity
-- `src/main/java/de/landtag/embedding/service/OpenAiEmbeddingService.java`
+- `src/main/java/de/embarc/ai/service/OpenAiEmbeddingService.java`
   - OpenAI-Embeddings fuer dieselben Texte
 
 ## Abschluss
