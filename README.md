@@ -1,4 +1,4 @@
-# Anleitung fuer Studierende: Java-Uebung "Embeddings"
+# Anleitung zur Java-Uebung "Embeddings"
 
 ## Ziel der Uebung
 In dieser Uebung arbeitet ihr euch schrittweise von einfachen, selbstgebauten Vektoren zu echten OpenAI-Embeddings vor:
@@ -10,7 +10,7 @@ In dieser Uebung arbeitet ihr euch schrittweise von einfachen, selbstgebauten Ve
 5. dieselben Texte mit OpenAI embeddieren
 6. die Similarity-Werte vergleichen
 
-Am Ende steht ein kleines Java-Programm, das denselben Satzpaaren zwei verschiedene Embedding-Strategien gegenueberstellt.
+Am Ende steht ein kleines Java-Programm, das dieselben Satzpaare mit zwei verschiedenen Embedding-Strategien gegenueberstellt.
 
 ## Voraussetzungen
 - Java 21 installiert
@@ -116,7 +116,7 @@ git checkout <branch-name>
   - OpenAI-Embeddings fuer dieselben Texte
 
 ## Abschluss
-Wenn ihr die TODOs in `ex-1` und `ex-2` geloest habt, vergleicht mit:
+Wenn die TODOs in `ex-1` und `ex-2` geloest sind, kann mit folgendem Stand verglichen werden:
 
 ```bash
 git checkout main
