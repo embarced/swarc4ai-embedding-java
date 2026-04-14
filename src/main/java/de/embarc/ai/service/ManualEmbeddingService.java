@@ -55,7 +55,7 @@ public class ManualEmbeddingService {
 
     public void printOneHotExample(List<String> vocabulary, String token) {
         int[] vector = oneHotEncode(token, vocabulary);
-        System.out.println("One-Hot-Beispiel fuer Token '" + token + "': " + Arrays.toString(vector));
+        System.out.println("One-Hot-Beispiel für Token '" + token + "': " + Arrays.toString(vector));
     }
 
     public void printComparison(TextPair pair, List<String> vocabulary) {
