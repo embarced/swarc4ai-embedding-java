@@ -14,33 +14,33 @@ import java.util.Set;
 public class ManualEmbeddingService {
 
     public List<String> buildVocabulary(List<String> texts) {
-        // TODO: UEBUNG 1 - Erzeuge aus allen Texten ein gemeinsames Vokabular.
-        // TODO: UEBUNG 1 - Zerlege dafuer jeden Text in Tokens und sammle jedes Wort genau einmal.
-        // TODO: UEBUNG 1 - Gib das Vokabular als List<String> zurueck.
-        throw new UnsupportedOperationException("UEBUNG 1: Implementiere den Aufbau des Vokabulars.");
+        // TODO: ÜBUNG 1 - Erzeuge aus allen Texten ein gemeinsames Vokabular.
+        // TODO: ÜBUNG 1 - Zerlege dafür jeden Text in Tokens und sammle jedes Wort genau einmal.
+        // TODO: ÜBUNG 1 - Gib das Vokabular als List<String> zurück.
+        throw new UnsupportedOperationException("ÜBUNG 1: Implementiere den Aufbau des Vokabulars.");
     }
 
     public int[] oneHotEncode(String token, List<String> vocabulary) {
-        // TODO: UEBUNG 1 - Erzeuge einen Vektor mit der Laenge des Vokabulars.
-        // TODO: UEBUNG 1 - Setze genau die Position des uebergebenen Tokens auf 1.
-        // TODO: UEBUNG 1 - Alle anderen Positionen bleiben 0.
-        throw new UnsupportedOperationException("UEBUNG 1: Implementiere One-Hot-Encoding.");
+        // TODO: ÜBUNG 1 - Erzeuge einen Vektor mit der Länge des Vokabulars.
+        // TODO: ÜBUNG 1 - Setze genau die Position des übergebenen Tokens auf 1.
+        // TODO: ÜBUNG 1 - Alle anderen Positionen bleiben 0.
+        throw new UnsupportedOperationException("ÜBUNG 1: Implementiere One-Hot-Encoding.");
     }
 
     public double[] toBagOfWordsVector(String text, List<String> vocabulary) {
-        // TODO: UEBUNG 1 - Erzeuge fuer den gesamten Text einen Bag-of-Words-Vektor.
-        // TODO: UEBUNG 1 - Erhoehe fuer jedes vorkommende Token den passenden Zaehler im Vektor.
-        throw new UnsupportedOperationException("UEBUNG 1: Implementiere den Bag-of-Words-Vektor.");
+        // TODO: ÜBUNG 1 - Erzeuge für den gesamten Text einen Bag-of-Words-Vektor.
+        // TODO: ÜBUNG 1 - Erhöhe für jedes vorkommende Token den passenden Zähler im Vektor.
+        throw new UnsupportedOperationException("ÜBUNG 1: Implementiere den Bag-of-Words-Vektor.");
     }
 
     public double calculateSimilarity(String leftText, String rightText, List<String> vocabulary) {
-        // TODO: UEBUNG 1 - Erzeuge fuer beide Texte jeweils einen Bag-of-Words-Vektor.
-        // TODO: UEBUNG 1 - Berechne anschliessend die Cosine Similarity mit der Hilfsklasse CosineSimilarity.
-        // TODO: UEBUNG 1 - Gib den berechneten Wert zurueck.
-        // SO PRUEFST DU ES: Starte die App. Es sollten fuer mehrere Satzpaare Bag-of-Words-Scores ausgegeben werden.
+        // TODO: ÜBUNG 1 - Erzeuge für beide Texte jeweils einen Bag-of-Words-Vektor.
+        // TODO: ÜBUNG 1 - Berechne anschließend die Cosine Similarity mit der Hilfsklasse CosineSimilarity.
+        // TODO: ÜBUNG 1 - Gib den berechneten Wert zurück.
+        // SO PRÜFST DU ES: Starte die App. Es sollten für mehrere Satzpaare Bag-of-Words-Scores ausgegeben werden.
         // Achtet darauf, dass 'Auto' vs. 'Fahrzeug' nur begrenzt erkannt wird und dass bei
-        // 'Hund beisst Mann' vs. 'Mann beisst Hund' die Wortreihenfolge verloren geht.
-        throw new UnsupportedOperationException("UEBUNG 1: Implementiere die Bag-of-Words-Similarity.");
+        // 'Hund beißt Mann' vs. 'Mann beißt Hund' die Wortreihenfolge verloren geht.
+        throw new UnsupportedOperationException("ÜBUNG 1: Implementiere die Bag-of-Words-Similarity.");
     }
 
     public List<String> tokenize(String text) {
@@ -51,7 +51,7 @@ public class ManualEmbeddingService {
 
     public void printOneHotExample(List<String> vocabulary, String token) {
         int[] vector = oneHotEncode(token, vocabulary);
-        System.out.println("One-Hot-Beispiel fuer Token '" + token + "': " + Arrays.toString(vector));
+        System.out.println("One-Hot-Beispiel für Token '" + token + "': " + Arrays.toString(vector));
     }
 
     public void printComparison(TextPair pair, List<String> vocabulary) {

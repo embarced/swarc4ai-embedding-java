@@ -30,7 +30,7 @@ public class EmbeddingApplication implements CommandLineRunner {
 
         List<String> vocabulary = manualEmbeddingService.buildVocabulary(allTexts);
 
-        System.out.println("=== Embedding Uebung ===");
+        System.out.println("=== Embedding Übung ===");
         System.out.println("Vokabular: " + vocabulary);
         manualEmbeddingService.printOneHotExample(vocabulary, "auto");
 
@@ -46,25 +46,25 @@ public class EmbeddingApplication implements CommandLineRunner {
                         "Synonyme",
                         "Das Auto ist schnell",
                         "Das Fahrzeug ist schnell",
-                        "Bag of Words sieht nur die Wortueberlappung. OpenAI erkennt meist besser, dass Auto und Fahrzeug aehnlich sind."
+                        "Bag of Words sieht nur die Wortüberlappung. OpenAI erkennt meist besser, dass Auto und Fahrzeug ähnlich sind."
                 ),
                 new TextPair(
                         "Wortreihenfolge",
-                        "Hund beisst Mann",
-                        "Mann beisst Hund",
-                        "Bag of Words ignoriert die Reihenfolge der Woerter und kann deshalb Bedeutungsunterschiede uebersehen."
+                        "Hund beißt Mann",
+                        "Mann beißt Hund",
+                        "Bag of Words ignoriert die Reihenfolge der Wörter und kann deshalb Bedeutungsunterschiede übersehen."
                 ),
                 new TextPair(
-                        "Klar unaehnlich",
+                        "Klar unähnlich",
                         "Ich trinke morgens Kaffee",
                         "Der Server startet neu",
-                        "Beide Verfahren sollten hier eine niedrige Aehnlichkeit liefern."
+                        "Beide Verfahren sollten hier eine niedrige Ähnlichkeit liefern."
                 ),
                 new TextPair(
                         "Support-Sprache",
                         "Passwort vergessen",
                         "Ich kann mich nicht einloggen",
-                        "Die Wortwahl ist verschieden, die Bedeutung aber verwandt. Das ist fuer OpenAI-Embeddings meist leichter."
+                        "Die Wortwahl ist verschieden, die Bedeutung aber verwandt. Das ist für OpenAI-Embeddings meist leichter."
                 )
         );
     }
